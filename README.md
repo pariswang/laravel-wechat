@@ -1,3 +1,4 @@
+# fork自 overtrue/laravel--wechat，修改以适应 PHP5.6
 # laravel-wechat
 
 ‼️ 注意：此版本为 4.x 版本，不兼容 3.x，与 [overtrue/wechat 4.x](https://github.com/overtrue/wechat) 同步
@@ -130,7 +131,7 @@ class WeChatController extends Controller
   $payment = EasyWeChat::payment(); // 微信支付
   $openPlatform = EasyWeChat::openPlatform(); // 开放平台
   $miniProgram = EasyWeChat::miniProgram(); // 小程序
-  
+
   // 均支持传入配置账号名称
   EasyWeChat::officialAccount('foo'); // `foo` 为配置文件中的名称，默认为 `default`
   //...
